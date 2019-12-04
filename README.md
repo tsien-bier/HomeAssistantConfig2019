@@ -1,5 +1,5 @@
 # HomeAssistantConfig2019
-nstallatie van Hassio
+installatie van Hassio
     Hostnaam: hassio.fritz.box
     IP: 192.168.178.38
     root:ktktest

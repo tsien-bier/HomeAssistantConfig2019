@@ -13,3 +13,4 @@ DuckDns klaargemaakt
 NGInx en letsencrypt gerealisseerd via poort 80 en 443 dus
    http://ktkhassio.duckns.org en https://ktkhassio.duckdns.org werken nu nog beide
    poorten 80 en 44 op fritz.box opengesteld.
+MQTT en MQTT webclient geinstalleerd. User en WW staan in secrets.

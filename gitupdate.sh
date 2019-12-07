@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /confit
+cd /config
 hassio homeassistant check
 
 git add .

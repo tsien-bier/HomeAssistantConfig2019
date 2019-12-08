@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /config
-hassio homeassistant check
+#hassio homeassistant check
 
 git add .
 git status

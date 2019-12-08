@@ -1,4 +1,3 @@
-
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
@@ -12,7 +11,33 @@ default_config:
 tts:
   - platform: google_translate
 
+camera:
+  - platform: mjpeg
+    name: Camera garage
+    mjpeg_url: http://192.168.178.210:8889
+
+# Device Tracker
+device_tracker:
+  - platform: fritz
+    host: 192.168.178.1
+    interval_seconds: 10
+    consider_home: 180
+    new_device_defaults:
+      track_new_devices: true
+
+
+#MQTT
+mqtt:
+  broker: hassio.fritz.box
+  client_id: home_assistant
+  username: !secret mqtt_broker_username1
+  password: !secret mqtt_broker_password1
+
+
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+sensor: !include sensors.yaml
+

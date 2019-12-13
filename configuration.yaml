@@ -45,7 +45,26 @@ climate:
     temperature_state_template: "{{ value_json['temp setpoint']}}"
     temperature_command_topic: "nefit/set/temp"
     min_temp: 10
-    max_temp: 22    
+    max_temp: 22
+    precision: 1
+
+#Setten van Paramater voor verwarming
+
+input_number:
+  slider1:
+    name: Aanwezig temp
+    initial: 20
+    min: 15
+    max: 21
+    step: 1
+  slider2:
+    name: Afwezig temp
+    initial: 10
+    min: 5
+    max: 15
+    step: 1
+
+
 
 group: !include groups.yaml
 automation: !include automations.yaml

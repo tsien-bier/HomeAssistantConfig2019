@@ -2,7 +2,8 @@ Bewoners:
 Huisgenoten:
     name: Huisgenoten
     entities:
-    -  device_tracker.galaxy_s6
+    -  device_tracker.galaxy_s9
     -  device_tracker.galaxy_a8_2018
     -  device_tracker.iphone_van_nova
+    -  device_tracker.galaxy_s6
 

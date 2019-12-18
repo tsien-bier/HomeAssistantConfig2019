@@ -15,6 +15,7 @@ camera:
   - platform: mjpeg
     name: Camera garage
     mjpeg_url: http://192.168.178.210:8889
+    #stream_source: rtsp://192.168.178.35:554/s0
 
 # Device Tracker
 device_tracker:
@@ -39,10 +40,13 @@ climate:
     name: NefitEasy
     modes:
       - "heat"
+      - "off"
     current_temperature_topic: "nefit/status"
     current_temperature_template: "{{ value_json['in house temp']}}"
     temperature_state_topic: "nefit/status"
     temperature_state_template: "{{ value_json['temp setpoint']}}"
+ #   mode_state_topic: "{{ value_json['boiler indicator']}}"
+   
     temperature_command_topic: "nefit/set/temp"
     min_temp: 10
     max_temp: 22
@@ -64,11 +68,12 @@ input_number:
     max: 15
     step: 1
 
-
-
+    
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 sensor: !include sensors.yaml
+light: !include lights.yaml
+
 

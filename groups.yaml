@@ -7,3 +7,11 @@ Huisgenoten:
     -  device_tracker.iphone_van_nova
     -  device_tracker.galaxy_s6
 
+Alarmlichten:
+    name: Alarmlichten
+    entities:
+    -  light.hok_boven_tafel
+    -  light.lamp_boven_bar
+    -  light.hue_color_lamp_1
+  
+

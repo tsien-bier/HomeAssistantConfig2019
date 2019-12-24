@@ -35,3 +35,12 @@
   white_value_template: '{{ value_json.white }}'
   effect_template: '{{ value_json.effect }}'
   qos: 2
+
+- platform: mqtt
+  name: "Spots_garagedeur"
+  state_topic: "shellies/shelly1-2C08AA/relay/0"
+  command_topic: "shellies/shelly1-2C08AA/relay/0/command"
+  payload_on: "on"
+  payload_off: "off"
+  retain: false
+  

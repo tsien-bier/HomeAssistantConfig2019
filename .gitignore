@@ -9,12 +9,12 @@
 !*.sh
 !*.json
 !*.js
+!node-red
 
 # Ignore folders.
 .storage
 .cloud
 .google.token
-./node-red/node-modules
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml

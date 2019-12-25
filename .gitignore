@@ -7,6 +7,8 @@
 !.gitignore
 !*.md
 !*.sh
+!*.json
+!*.js
 
 # Ignore folders.
 .storage

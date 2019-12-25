@@ -4,7 +4,7 @@ cd /config
 #hassio homeassistant check
 
 git add .
-git add . node-red
+git add node-red
 git status
 echo -n "Enter the Description for the Change: " [Minor Update]
 read CHANGE_MSG

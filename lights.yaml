@@ -43,4 +43,13 @@
   payload_on: "on"
   payload_off: "off"
   retain: false
+
+- platform: mqtt
+  name: "Licht_garagedeur"
+  state_topic: "shellies/shelly1-2C8807/relay/0"
+  command_topic: "shellies/shelly1-2C8807/relay/0/command"
+  payload_on: "on"
+  payload_off: "off"
+  retain: false
+  
   

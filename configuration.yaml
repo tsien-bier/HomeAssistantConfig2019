@@ -39,14 +39,13 @@ climate:
   - platform: mqtt
     name: NefitEasy
     modes:
-      - "heat"
-      - "off"
+     - "heat"
+     - "off"
+     - “dry”
     current_temperature_topic: "nefit/status"
     current_temperature_template: "{{ value_json['in house temp']}}"
     temperature_state_topic: "nefit/status"
     temperature_state_template: "{{ value_json['temp setpoint']}}"
- #   mode_state_topic: "{{ value_json['boiler indicator']}}"
-   
     temperature_command_topic: "nefit/set/temp"
     min_temp: 10
     max_temp: 22
